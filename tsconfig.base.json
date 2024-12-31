@@ -1,0 +1,30 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2022",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@simpel-page/footer-feature": [
+        "libs/simpelPage/footer-feature/src/index.ts"
+      ],
+      "@simpel-page/landing": ["libs/simpelPage/src/index.ts"],
+      "@simpel-page/landing-page": [
+        "libs/simpelPage/landing-page/src/index.ts"
+      ],
+      "@simpel-page/nav-feature": ["libs/simpelPage/nav-feature/src/index.ts"],
+      "@simpel-page/src": ["libs/simpelPage/landing/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
