@@ -1,0 +1,14 @@
+
+<div class="wrapper">
+  <div *ngFor="let faq of faqs" class="faq-item">
+    <div class="faq-question" (click)="toggleAnswer(faq)">
+      <span>{{ faq.question }}</span>
+      <button class="faq-toggle-btn">
+        {{ faq.isOpen ? '-' : '+' }}
+      </button>
+    </div>
+    <div *ngIf="faq.isOpen" class="faq-answer">
+      <p>{{ faq.answer }}</p>
+    </div>
+  </div>
+</div>

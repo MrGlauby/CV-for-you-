@@ -1,7 +1,35 @@
-.wrapper-nav{
-    border: solid black;
-    align-items: center;
-    justify-content: center;
-    display:flex;
-    background-color: rgba(0, 0, 0, 0.206);
+.wrapper-nav {
+  border: solid black;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.206);
+}
+
+.wrapper-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 10px;
+}
+
+.wrapper-nav .dropdown {
+  position: relative;
+}
+
+.wrapper-nav .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+}
+
+.wrapper-nav .dropdown:hover .dropdown-menu {
+  display: block;
 }

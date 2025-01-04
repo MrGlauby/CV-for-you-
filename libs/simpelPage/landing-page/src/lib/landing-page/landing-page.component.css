@@ -1,0 +1,14 @@
+.picture-sp {
+  width: 200px;
+  height: 300px;
+}
+
+.cards-wrapper {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.card-details {
+  width: 20%;
+}
